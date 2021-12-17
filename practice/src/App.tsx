@@ -1,36 +1,20 @@
-import React,{useState} from 'react';
+import * as React from 'react';
 import './App.css';
-import styled from 'styled-components';
+import styled from "styled-components";
+import Nav from './Nav';
 
 function App() {
-  const [content,setContent] = useState<String>('')
-  let sendMessage:String = ''
-  function change(text:any){
-    setContent(text.target.value)
-    console.log(content)
-  }
-  function shownumber(number:Number){
-    return number
-  }
-  function hellowolrd(name:String){
-    return sendMessage = 'hello' + name
-  }
-  const Messgae = styled.h1`
-  color: black;
-  `
-  const Text = styled.textarea`
-  width: 300px;
-  height:30px;
-  `
-  const Button = styled.button`
-  width: 100px;
-  height: 40px;
-  `
+
+  const StyledButton = styled.button`
+  width: 50px;
+  hegith: 30px;
+  `;
+  
+  
   return (
     <div className="App">
-      <Text onChange={(e:any) => change(e)} />
-      <Button onClick={() => hellowolrd}>클릭!</Button>
-      <Messgae>{sendMessage}</Messgae>
+      <Nav name='이선웅'/>
+      <StyledButton>안녕하세요</StyledButton>
     </div>
   );
 }

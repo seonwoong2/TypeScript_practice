@@ -21,6 +21,11 @@ const Nav: React.SFC<NavProps> = ({name}) => (
   <div>
     <StyledBackground>
       <StyledLogo src={Logo} />
+      <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      </ul>
 
     </StyledBackground>
   </div>

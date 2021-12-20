@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import styled from "styled-components";
-import Nav from './Nav';
+import Nav from './componenets/nav/index';
 
 function App() {
 
@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Nav name='이선웅'/>
-      <StyledButton>안녕하세요</StyledButton>
     </div>
   );
 }

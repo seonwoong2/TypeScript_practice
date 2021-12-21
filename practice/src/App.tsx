@@ -12,8 +12,9 @@ function App() {
   
   
   return (
-    <div className="App">
-      <Nav name='이선웅'/>
+    <div>
+      <Nav/>
+ 
     </div>
   );
 }

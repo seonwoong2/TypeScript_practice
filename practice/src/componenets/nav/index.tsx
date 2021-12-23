@@ -33,7 +33,7 @@ background-color: #ffb800;
 justify-content: space-between;
 display: flex;
 @media ${props => props.theme.tablet}{
-  ${isToggle ? 'height: 200px;' : ''}
+  ${isToggle ? 'height: 200px;' : ''};
 }
 `
 

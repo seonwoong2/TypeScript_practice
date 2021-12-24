@@ -20,7 +20,7 @@ export const StyledMenuIcon = styled.div`
   display:none;
   @media ${props => props.theme.tablet}{
     display:flex;
-    position: fixed;
+    position: absolute;
     right: 5px;
     top: 20px;
     font-size:35px;
@@ -46,6 +46,9 @@ export const StyledMenuA = styled.a`
 text-decoration:none;
 font-weight: bold;
 color: black;
+@media ${props => props.theme.mobile}{
+  font-size: 13px;
+}
 `
 export const StyledButtonBox = styled.div`
 display: flex;

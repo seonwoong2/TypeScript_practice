@@ -25,6 +25,11 @@ list-style: none;
   justify-content: center;
   margin-right: 40%;`: 'display:none;'}
 }
+@media ${props => props.theme.mobile}{
+height: 100%;
+margin-right: 32%;
+margin-top:0;
+}
 `
 const StyledBackground = styled.div`
 width:100%;

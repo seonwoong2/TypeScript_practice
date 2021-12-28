@@ -13,7 +13,7 @@ import {
   StyledMenuIcon,
 } from './styles';
 
-const Nav = (): JSX.Element => {
+const Nav = ({...props}): JSX.Element => {
 const [isToggle, setIsToggle] = useState<Boolean>(false);
 
 const StyledMenu = styled.ul`
@@ -47,6 +47,10 @@ display: flex;
   const toggleHandler = (a:any) => {
     setIsToggle(!isToggle)
   }
+
+  const toSignup = () => {
+    window.location.href='/signup'
+  }
   return(
   <div>
     <StyledBackground >
@@ -57,8 +61,8 @@ display: flex;
         <StyledMenuLi><StyledMenuA href='/makeMeet'>맞밥 약속 만들기</StyledMenuA></StyledMenuLi>
         <StyledMenuLi>
           <StyledButtonBox>
-            <StyledLog>로그인</StyledLog>
-            <StyledLog>회원가입</StyledLog>
+            <StyledLog onClick={(e) => props.setIsmodal(true)}>로그인</StyledLog>
+            <StyledLog onClick={() => toSignup()}>회원가입</StyledLog>
           </StyledButtonBox>
         </StyledMenuLi>
       </StyledMenu>

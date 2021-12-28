@@ -6,7 +6,7 @@ width: 100%;
 height:100%;
 background-color: rgba( 47, 138, 241, 0.1);
 position: fixed;
-padding:5% 30%;
+padding:3% 30%;
 `
 
 export const StyledContainer = styled.section`
@@ -64,7 +64,7 @@ border-radius: 15px;
 
  export const SytledLoginBt = styled.button`
  border: 3px solid #ffa512;
- width: 140px;
+ width: 170px;
  height: 35px;
  background:none;
  border-radius: 20px;
@@ -75,4 +75,13 @@ border-radius: 15px;
    background-color: #ffa512;
    cursor:pointer;
  }
+ `
+
+ export const StyledA = styled.a`
+ display:block;
+ margin-top: 15px;
+ font-size: 20px;
+ `
+
+ export const StyledSocial = styled.button`
  `

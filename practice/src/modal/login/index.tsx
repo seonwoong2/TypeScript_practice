@@ -9,6 +9,7 @@ import {
   StyledInputBox,
   StyledInput,
   SytledLoginBt,
+  StyledA,
 } from './styles'
 
 function Index({...props}): JSX.Element {
@@ -43,9 +44,12 @@ function Index({...props}): JSX.Element {
           <StyledInput type='email' placeholder='이메일을 입력해 주세요' />
           <StyledMailErr>이메일 형식이 올바르지 않습니다.</StyledMailErr>
           <StyledSubhead>비밀번호</StyledSubhead>
-          <StyledPasswordErr></StyledPasswordErr>
+          <StyledPasswordErr>비밀번호를 다시 입력해주세요</StyledPasswordErr>
           <StyledInput type='password' placeholder='비밀번호를 입력해 주세요' />
           <SytledLoginBt>로그인</SytledLoginBt>
+          <StyledA href='/signup' onClick={(e) => closeHandler(e)}>회원이 아니신가요?</StyledA>
+          <SytledLoginBt>카카오(임시)</SytledLoginBt>
+          <div><SytledLoginBt>구글(임시)</SytledLoginBt></div>
         </StyledInputBox>
       </StyledContainer>
     </Styledbackground>

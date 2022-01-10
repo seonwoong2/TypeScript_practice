@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledBackground = styled.div`
 display: flex;
-background-color: #fffade;
+background-color: #F6F9FA;
 width:100%;
 height: 60px;
 justify-content: center;

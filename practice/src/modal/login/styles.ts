@@ -42,7 +42,6 @@ border-radius: 15px;
  `
  
  export const StyledInputBox = styled.div`
- border: 1px solid black;
  width: 400px;
  height: 500px;
  margin: 0 9%;

@@ -37,6 +37,9 @@ width: 50px;
 height: 50px;
 display: flex;
 padding: 10px 0 0 5px;
+&:hover{
+  cursor:pointer;
+}
 `
 export const StyledMenuLi = styled.li`
 padding: 8px 12px;

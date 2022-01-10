@@ -51,10 +51,14 @@ display: flex;
   const toSignup = () => {
     window.location.href='/signup'
   }
+
+  const toHome = () => {
+    window.location.href='/'
+  }
   return(
   <div>
     <StyledBackground >
-      <StyledLogo src={Logo} />
+      <StyledLogo src={Logo} onClick={(e) => toHome()} />
       <StyledMenu>
         <StyledMenuLi><StyledMenuA href='/main' >맞밥 약속 조회하기</StyledMenuA></StyledMenuLi>
         <StyledMenuLi><StyledMenuA href='/myPromise'>나의 맞밥 약속보기</StyledMenuA></StyledMenuLi>

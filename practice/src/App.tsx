@@ -7,8 +7,10 @@ import Landing from './components/landing/index';
 import Footer from './components/footer/index';
 import LoginModal from './modal/login/index';
 import SignUp from './components/signup/index';
+import Main from './components/main/index';
 const App = (): JSX.Element => {
   const [ismodal, setIsmodal] = useState<boolean>(false)
+  
 
     return (
       <div>
@@ -20,6 +22,9 @@ const App = (): JSX.Element => {
         </Routes>
         <Routes>
           <Route path='signup' element={<SignUp />}/>
+        </Routes>
+        <Routes>
+          <Route path='/main' element={<Main />} />
         </Routes>
         <Footer />
       </BrowserRouter>
